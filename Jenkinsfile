@@ -5,7 +5,7 @@ agent none
       agent any
       steps{
         withSonarQubeEnv('SonarQube Scanner'){
-          sh 'mvn clean package sonar:sonar
+          sh 'mvn clean package sonar:sonar'
         }
       }
     }
